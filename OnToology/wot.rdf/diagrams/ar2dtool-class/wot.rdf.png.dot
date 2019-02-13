@@ -1,0 +1,52 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "wot^^http://www.w3.org/2001/XMLSchema#string:CommunicationProtocol" "wot^^http://www.w3.org/2001/XMLSchema#string:Thing" "wot^^http://www.w3.org/2001/XMLSchema#string:InteractionPattern" "wot^^http://www.w3.org/2001/XMLSchema#string:DataType" "wot^^http://www.w3.org/2001/XMLSchema#string:Property" "wot^^http://www.w3.org/2001/XMLSchema#string:DataSchema" "http://www.wurvoc.org/vocabularies/om-1.8/Unit_of_measure" "wot^^http://www.w3.org/2001/XMLSchema#string:Link" ; /*classes style*/
+	"wot^^http://www.w3.org/2001/XMLSchema#string:isWritableThrough" -> "wot^^http://www.w3.org/2001/XMLSchema#string:isAccessibleThrough" [ label = "rdfs:subPropertyOf" ];
+	"wot^^http://www.w3.org/2001/XMLSchema#string:thingName" -> "wot^^http://www.w3.org/2001/XMLSchema#string:name" [ label = "rdfs:subPropertyOf" ];
+	"wot^^http://www.w3.org/2001/XMLSchema#string:isReadableThrough" -> "wot^^http://www.w3.org/2001/XMLSchema#string:isAccessibleThrough" [ label = "rdfs:subPropertyOf" ];
+	"wot^^http://www.w3.org/2001/XMLSchema#string:CommunicationProtocol" -> "wot^^http://www.w3.org/2001/XMLSchema#string:Property" [ label = "owl:disjointWith" ];
+	"NULL" -> "xsd:string" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "xsd:boolean" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "wot^^http://www.w3.org/2001/XMLSchema#string:hasMediaType" [ label = "owl:onProperty" ];
+	"NULL" -> "wot^^http://www.w3.org/2001/XMLSchema#string:CommunicationProtocol" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "wot^^http://www.w3.org/2001/XMLSchema#string:Link" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "wot^^http://www.w3.org/2001/XMLSchema#string:DataType" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "wot^^http://www.w3.org/2001/XMLSchema#string:hasInputData" [ label = "owl:onProperty" ];
+	"NULL" -> "wot^^http://www.w3.org/2001/XMLSchema#string:hasValueType" [ label = "owl:onProperty" ];
+	"NULL" -> "wot^^http://www.w3.org/2001/XMLSchema#string:DataSchema" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "wot^^http://www.w3.org/2001/XMLSchema#string:isQueueable" [ label = "owl:onProperty" ];
+	"NULL" -> "wot^^http://www.w3.org/2001/XMLSchema#string:Link" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "http://www.wurvoc.org/vocabularies/om-1.8/Unit_of_measure" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "wot^^http://www.w3.org/2001/XMLSchema#string:isMeasuredIn" [ label = "owl:onProperty" ];
+	"NULL" -> "wot^^http://www.w3.org/2001/XMLSchema#string:DataSchema" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "wot^^http://www.w3.org/2001/XMLSchema#string:isWritable" [ label = "owl:onProperty" ];
+	"NULL" -> "wot^^http://www.w3.org/2001/XMLSchema#string:interactionName" [ label = "owl:onProperty" ];
+	"NULL" -> "wot^^http://www.w3.org/2001/XMLSchema#string:isRequired" [ label = "owl:onProperty" ];
+	"NULL" -> "wot^^http://www.w3.org/2001/XMLSchema#string:hasOutputData" [ label = "owl:onProperty" ];
+	"NULL" -> "wot^^http://www.w3.org/2001/XMLSchema#string:href" [ label = "owl:onProperty" ];
+	"NULL" -> "wot^^http://www.w3.org/2001/XMLSchema#string:isProvidedOverProtocol" [ label = "owl:onProperty" ];
+	"NULL" -> "xsd:string" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "wot^^http://www.w3.org/2001/XMLSchema#string:providesInteractionPattern" [ label = "owl:onProperty" ];
+	"NULL" -> "wot^^http://www.w3.org/2001/XMLSchema#string:InteractionPattern" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "wot^^http://www.w3.org/2001/XMLSchema#string:isAccessibleThrough" [ label = "owl:onProperty" ];
+	"wot^^http://www.w3.org/2001/XMLSchema#string:hasPriorityEndpoint" -> "wot^^http://www.w3.org/2001/XMLSchema#string:isAccessibleThrough" [ label = "rdfs:subPropertyOf" ];
+	"wot^^http://www.w3.org/2001/XMLSchema#string:interactionName" -> "wot^^http://www.w3.org/2001/XMLSchema#string:name" [ label = "rdfs:subPropertyOf" ];
+	"wot^^http://www.w3.org/2001/XMLSchema#string:" -> "http://www.oeg-upm.net/" [ label = "dc:publisher" ];
+	"wot^^http://www.w3.org/2001/XMLSchema#string:" -> "http://purl.org/net/mpoveda" [ label = "terms:creator" ];
+	"wot^^http://www.w3.org/2001/XMLSchema#string:" -> "http://www.oeg-upm.net/index.php/en/universitystaff/402-fserena/" [ label = "terms:creator" ];
+	"wot^^http://www.w3.org/2001/XMLSchema#string:" -> "http://www.garcia-castro.com/foaf.rdf#me" [ label = "terms:creator" ];
+	"wot^^http://www.w3.org/2001/XMLSchema#string:" -> "http://purl.org/NET/rdflicense/cc-by4.0" [ label = "terms:license" ];
+	"owl:Thing" -> "xsd:string" [ label = "wot^^http://www.w3.org/2001/XMLSchema#string:href" ];
+	"owl:Thing" -> "xsd:string" [ label = "wot^^http://www.w3.org/2001/XMLSchema#string:hasMediaType" ];
+	"wot^^http://www.w3.org/2001/XMLSchema#string:InteractionPattern" -> "owl:Thing" [ label = "wot^^http://www.w3.org/2001/XMLSchema#string:interactionName" ];
+	"wot^^http://www.w3.org/2001/XMLSchema#string:Thing" -> "wot^^http://www.w3.org/2001/XMLSchema#string:InteractionPattern" [ label = "wot^^http://www.w3.org/2001/XMLSchema#string:providesInteractionPattern" ];
+	"owl:Thing" -> "xsd:boolean" [ label = "wot^^http://www.w3.org/2001/XMLSchema#string:isRequired" ];
+	"owl:Thing" -> "xsd:boolean" [ label = "wot^^http://www.w3.org/2001/XMLSchema#string:isWritable" ];
+	"wot^^http://www.w3.org/2001/XMLSchema#string:Thing" -> "owl:Thing" [ label = "wot^^http://www.w3.org/2001/XMLSchema#string:thingName" ];
+	"owl:Thing" -> "xsd:string" [ label = "wot^^http://www.w3.org/2001/XMLSchema#string:name" ];
+	"owl:Thing" -> "xsd:boolean" [ label = "wot^^http://www.w3.org/2001/XMLSchema#string:isQueueable" ];
+	"owl:Thing" -> "rdfs:Literal" [ label = "wot^^http://www.w3.org/2001/XMLSchema#string:defaultValue" ];
+	"wot^^http://www.w3.org/2001/XMLSchema#string:Thing" -> "xsd:string" [ label = "wot^^http://www.w3.org/2001/XMLSchema#string:baseURI" ];
+
+}

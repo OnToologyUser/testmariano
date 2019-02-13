@@ -1,0 +1,9 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "wot^^http://www.w3.org/2001/XMLSchema#string:InteractionPattern" "wot^^http://www.w3.org/2001/XMLSchema#string:Property" "wot^^http://www.w3.org/2001/XMLSchema#string:Action" "wot^^http://www.w3.org/2001/XMLSchema#string:Event" ; /*classes style*/
+	"wot^^http://www.w3.org/2001/XMLSchema#string:Action" -> "wot^^http://www.w3.org/2001/XMLSchema#string:InteractionPattern" [ label = "rdfs:subClassOf" ];
+	"wot^^http://www.w3.org/2001/XMLSchema#string:Event" -> "wot^^http://www.w3.org/2001/XMLSchema#string:InteractionPattern" [ label = "rdfs:subClassOf" ];
+	"wot^^http://www.w3.org/2001/XMLSchema#string:Property" -> "wot^^http://www.w3.org/2001/XMLSchema#string:InteractionPattern" [ label = "rdfs:subClassOf" ];
+
+}
